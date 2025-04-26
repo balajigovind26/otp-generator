@@ -16,15 +16,3 @@ def otp_6():
         otp+=str(random.randint(0,9))
     return(otp)
 otp_6()
-
-
-#captcha
-
-import string
-
-def  captcha():
-    out=''
-    characters=string.ascii_letters + string.digits
-    for i in range(random.randint(4,6)):
-        out+=random.choice(characters)
-    return out
